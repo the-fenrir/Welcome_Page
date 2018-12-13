@@ -1,0 +1,57 @@
+body{
+    background: url("background.jpg");
+    background-position: center;
+}
+
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 50px;
+}
+
+button {
+    background-color: SlateBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.95;
+}
+
+button:hover {
+    opacity: 1.0;
+}
+
+.loginbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.signupbtn{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.loginbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    margin: auto;
+    width : 500px;
+    padding: 0px;
+    color: white;
+}
+
+a:link, a:visited{
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}

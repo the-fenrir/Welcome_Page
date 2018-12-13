@@ -1,0 +1,154 @@
+body{
+    background: url("../background.jpg");
+    background-position: center;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=radio]{
+    font-size: small;
+    color: blue;
+}
+
+.fname[type=text]{
+    width: 49%;
+    margin-left: 0px;
+}
+
+.lname[type=text]{
+    width: 49%;
+    margin-right: : 0px;
+}
+
+.radio {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 70px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gender{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+button {
+    background-color: SlateBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.95;
+}
+
+button:hover {
+    opacity: 1.0;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.signupbtn{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    margin: auto;
+    width : 350px;
+    padding: 0px;
+    color: white;
+}
+
+a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
